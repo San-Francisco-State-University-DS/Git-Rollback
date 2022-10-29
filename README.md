@@ -16,7 +16,6 @@ There're 3 imaginary separate area in a folder contains git repository.
 * Staging Area
 * .git repository
 
-![](./Asset/Git-Staging.png)
 
 Git Checkout
 ---
@@ -65,6 +64,25 @@ $ ... make some changes to file1.py
 $ git checkout file1.py
 ```
 
+Git Reset Rollback
+---
+
+![](./Asset/Git-Staging.png)
+## git reset [--mixed] 
+
+git reset or git reset --mixed resets the index but not the working tree (i.e., the changed files are preserved but not marked for
+ commit) and reports what has not been updated. This is the default action.
+
+## git reset --soft rollback
+Does not touch the index file or the working tree at all (but resets the head to <commit>, just like
+all modes do). This leaves all your changed files "Changes to be committed", as git status would put
+it.
+
+## git reset --hard rollback
+Resets the index and working tree. Any changes to tracked files in the working tree since <commit> are
+discarded.
+
+Its kind of dry reading above description, but I will demostrate how to use git reset in class.
 
 
 
