@@ -84,5 +84,11 @@ discarded.
 
 Its kind of dry reading above description, but I will demostrate how to use git reset in class.
 
+Git Revert Rollback
+---
+Opposite to what git reset did, git revert moves the HEAD forward instead of backward.
 
+Given one or more existing commits, revert the changes that the related patches introduce, and record some new
+commits that record them. This requires your working tree to be clean (no modifications from the HEAD commit).
 
+Implement a bug here
